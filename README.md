@@ -29,10 +29,10 @@ Diferenciais implementados:
 
 
 ## ⚙️ Tecnologias utilizadas
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) — marcação semântica das seções e formulários.
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) (Bootstrap 5 + `css/style.css`) — grid, componentes e estilos customizados.
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) — `js/main.js` para equalização de alturas, manipulação do formulário e ajustes de acessibilidade.
-![Font Awesome](https://img.shields.io/badge/Font%20Awesome-528DD7?style=for-the-badge&logo=fontawesome&logoColor=white) — ícones (uso via CDN localizado em `index.html`).
+- **HTML5** — marcação semântica das seções e formulários.
+- **CSS3** (Bootstrap 5 + `css/style.css`) — grid, componentes e estilos customizados.
+- **JavaScript (vanilla)** — `js/main.js` para equalização de alturas, manipulação do formulário e ajustes de acessibilidade.
+- **Font Awesome** — ícones (uso via CDN localizado em `index.html`).
 
 Papel de cada tecnologia:
 - Bootstrap: base responsiva e componentes (carrossel, grid, utilitários).
