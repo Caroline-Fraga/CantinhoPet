@@ -1,0 +1,192 @@
+/* ==================================================
+   css/style.css - Estrutura
+
+   Seções:
+   1) Variáveis ( :root )
+   2) Base (tipografia, body, navbar)
+   3) Componentes (cards, botões, formulários, carousels)
+   4) Layout e seções (banner, sobre, servicos, produtos, depoimentos, contato)
+   5) Media queries / Responsividade
+
+   Comentários em português para facilitar manutenção.
+   ================================================== */
+
+/* 1) Variáveis */
+:root{
+    --primary:#6f42c1;
+    --accent:#D7BDE2;
+    --muted:#6c757d;
+    --base-font-size: 18px;
+    --base-line-height: 1.7;
+    --card-title-min-height: 56px;
+    --card-text-line-clamp: 4;
+    --card-image-height: 260px;
+    --card-title-box-height: 56px;
+}
+
+/* 2) Base */
+body{
+    font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color:#222;
+    background-color:#fff;
+    font-size: var(--base-font-size);
+    line-height: var(--base-line-height);
+}
+
+/* Tipografia e títulos */
+h1{ font-size: 2.25rem; line-height:1.15; font-weight:600; }
+h2{ font-size: 1.6rem; line-height:1.2; font-weight:600; }
+h3{ font-size:1.25rem; line-height:1.2; }
+
+p, .card-text, .lead, .nav-link, label, .small { font-size:1rem; line-height:1.6; color:#222; }
+.lead{ font-size:1.12rem; color:#111; }
+
+/* Navbar / Brand */
+.navbar-brand img{ object-fit:cover; }
+.navbar-brand .brand-name{ font-size:1.05rem; color:var(--primary); line-height:1; font-weight:600; }
+.navbar-brand .brand-sub{ font-size:0.85rem; line-height:1; margin-top:2px; font-weight:600; }
+.navbar-brand .paw-icon{ font-size:1.9rem; color:var(--primary); opacity:0.95; display:inline-flex; align-items:center; }
+
+.navbar{ padding-top:0.9rem; padding-bottom:0.9rem; min-height:68px; }
+@media (max-width:991px){ .navbar{ padding-top:0.6rem; padding-bottom:0.6rem; min-height:60px; } }
+
+.navbar > .container{ display:flex; align-items:center; justify-content:space-between; gap:2.5rem; max-width:100%; }
+.navbar-toggler{ order:2; margin-left:auto; }
+.navbar-brand{ order:1; }
+.collapse.navbar-collapse{ order:3; }
+.navbar .navbar-nav{ margin-left:auto !important; margin-right:0 !important; }
+
+/* Buttons */
+.btn-primary{ background-color:var(--primary); border-color:var(--primary); }
+.btn-primary:hover{ background-color:#5a2fb0; border-color:#5a2fb0; }
+.btn-outline-light{ color:#333; border-color:#ccc; }
+.btn-outline-light:hover{ color:#111; background-color:#f1f1f1; border-color:#bbb; }
+.banner .btn-outline-light{ color:#fff; border-color: rgba(255,255,255,0.9); background:transparent; }
+
+/* 3) Componentes gerais */
+/* Cards: estrutura flex para equalizar alturas */
+.card{ display:flex; flex-direction:column; position:relative; }
+.card.h-100{ display:flex; flex-direction:column; }
+.card.h-100 .card-body{ flex:1 1 auto; display:flex; flex-direction:column; justify-content:space-between; }
+.card .card-title{ font-size: 1.05rem; color: var(--primary); }
+.card .card-text{ font-size:1rem; color:#222; }
+
+/* Área de imagem dos cards */
+.card img{ width:100%; height:var(--card-image-height); object-fit:cover; flex:0 0 var(--card-image-height); }
+.card.card-no-img .card-body::before{ content:''; display:block; height:var(--card-image-height); }
+.card.formulario-contato.card-no-img .card-body::before{ content:none !important; display:none !important; height:0 !important; }
+
+/* Clamp para títulos e textos dentro de cards */
+.card.h-100 .card-body .card-title{ flex:0 0 var(--card-title-box-height); height:var(--card-title-box-height); display:-webkit-box; -webkit-box-orient:vertical; -webkit-line-clamp:2; line-clamp:2; overflow:hidden; padding-right:0.5rem; margin:0; }
+.card.h-100 .card-body .card-text{ flex:1 1 auto; overflow:hidden; display:-webkit-box; -webkit-line-clamp:4; line-clamp:4; -webkit-box-orient:vertical; }
+
+/*  Preço (badge) posicionado no canto inferior direito */
+.card .preco{ position:absolute; right:0.9rem; bottom:0.15rem; background:transparent; color:var(--primary) !important; padding:.28rem .6rem; border-radius:8px; font-weight:700; font-size:0.98rem; margin:0; }
+.servico-card .card-body, .produto-card .card-body{ padding-bottom:3rem; }
+@media (max-width:767px){ .card .preco{ right:0.6rem; bottom:0.12rem; font-size:0.95rem; } .servico-card .card-body, .produto-card .card-body{ padding-bottom:2.5rem; } }
+
+/* Serviços / Produtos (componentes) */
+.servico-card .card-body, .produto-card .card-body{ padding:1.6rem; }
+.servico-card .card-title, .produto-card .card-title{ font-size:1.15rem; margin-bottom:0.6rem; }
+.servico-card p, .produto-card p{ color:#444; }
+.servico-card{ transition:transform .18s ease, box-shadow .18s ease; }
+.servico-card:hover{ transform:translateY(-6px); box-shadow:0 8px 30px rgba(15,15,15,0.12); }
+.produto-card{ transition:transform .18s ease, box-shadow .18s ease; }
+.produto-card:hover{ transform:translateY(-6px); box-shadow:0 8px 30px rgba(15,15,15,0.08); }
+
+/* Formulário de contato */
+.formulario-contato{ border-radius:10px; background:#fff; border:1px solid rgba(111,66,193,0.06); box-shadow:0 6px 18px rgba(15,15,15,0.06); }
+.card.formulario-contato .card-body{ padding:1.25rem 1.5rem !important; }
+.card.formulario-contato .card-title{ margin-top:0 !important; margin-bottom:0.4rem !important; }
+.card.formulario-contato .card-img-top{ height:120px; width:100%; object-fit:cover; border-top-left-radius:10px; border-top-right-radius:10px; }
+.formulario-contato .form-control{ padding:.75rem .9rem; border-radius:8px; border:1px solid rgba(111,66,193,0.08); transition:box-shadow .18s ease, border-color .12s ease, transform .12s ease; }
+.formulario-contato .form-control:focus{ box-shadow:0 10px 30px rgba(111,66,193,0.12); border-color:var(--primary); outline:none; }
+.formulario-contato .form-control::placeholder{ color:#9aa; }
+.formulario-contato .form-text, .formulario-contato .card-text{ color:#6c757d; }
+.formulario-contato .btn-primary{ background:var(--primary); border-color:var(--primary); padding:.6rem 1rem; box-shadow:0 6px 18px rgba(111,66,193,0.06); }
+.formulario-contato .btn-primary:hover{ box-shadow:0 10px 26px rgba(111,66,193,0.12); }
+.card.formulario-contato{ position:relative; overflow:hidden; }
+.card.formulario-contato:hover{ box-shadow:0 12px 36px rgba(15,15,15,0.12); }
+.card.formulario-contato .card-title{ color:var(--primary); font-weight:700; font-size:1.15rem; }
+
+/* Reduzir altura específica dos campos do formulário para alinhamento compacto */
+.formulario-contato input#nome.form-control,
+.formulario-contato input#email.form-control,
+.formulario-contato input#telefone.form-control{
+    padding: .45rem .75rem;
+    font-size: .95rem;
+    line-height: 1.3;
+}
+
+/* Carousel controls / indicators */
+.carousel-indicators [data-bs-target], .carousel-indicators [data-target]{ width:12px; height:12px; border-radius:50%; background-color:var(--primary); opacity:0.9; border:2px solid rgba(0,0,0,0.12); }
+.carousel-indicators .active{ background-color:var(--primary); opacity:1; }
+.overlay-control{ width:44px; height:44px; padding:0; border-radius:50%; display:inline-flex; align-items:center; justify-content:center; background:rgba(0,0,0,0.45); border:none; }
+.overlay-control .carousel-control-prev-icon, .overlay-control .carousel-control-next-icon{ width:18px!important; height:18px!important; background-size:18px 18px!important; }
+.overlay-control:hover{ background:rgba(0,0,0,0.6); }
+.carousel .carousel-indicators{ position:static !important; margin:0.6rem 0; }
+.carousel .carousel-footer{ position:relative; z-index:2; }
+.carousel .carousel-control-prev, .carousel .carousel-control-next{ position:relative; top:auto; transform:none; }
+.carousel .carousel-control-prev-icon, .carousel .carousel-control-next-icon{ width:28px; height:28px; }
+
+/* 4) Layout / Seções específicas */
+.banner{ background-color:var(--primary); min-height:520px; display:flex; align-items:center; }
+.banner .container .col-md-8{ background:transparent; }
+/* garantir o texto destacado do banner em branco */
+.banner .lead{ color: #fff !important; }
+
+#sobre{ position:relative; background-color:#f8fbfd; background-image:url('../img/patinhas.png'); background-repeat:no-repeat; background-position:center center; background-size:cover; }
+#sobre .col-md-8{ background:rgba(255,255,255,0.95); padding:1.6rem; border-radius:8px; box-shadow:0 6px 18px rgba(15,15,15,0.06); }
+#sobre h2{ margin-bottom:1.5rem; }
+#sobre p, #sobre ul, #sobre ul li{ font-size:1rem; line-height:1.6; color:#222; font-weight:400; }
+#sobre ul{ padding-left:1.25rem; margin-top:0.6rem; }
+
+#servicos h2, #depoimentos h2{ color:var(--primary); }
+#sobre h2, #servicos h2, #contato h2 { color: var(--primary); }
+#produtos h2 { color: var(--primary); }
+#depoimentos .row{ display:flex; flex-wrap:wrap; }
+#depoimentos .col-md-4{ display:flex; }
+#depoimentos .card{ display:flex; flex-direction:column; flex:1 1 auto; }
+#depoimentos .card p{ flex:1 1 auto; }
+
+/* Garantir espaçamento da seção de contato igual à de depoimentos (py-5) */
+#contato{ padding-top: 3rem; padding-bottom: 3rem; }
+
+/* Footer */
+footer{ font-size:0.95rem; }
+footer, footer p, footer a, footer small{ color:#fff !important; }
+footer a{ text-decoration:none !important; }
+footer a:hover, footer a:focus, footer a:visited{ color:#fff !important; text-decoration:none !important; }
+
+/* Utilities */
+.container{ max-width:1100px; }
+
+/* Skip link (acessibilidade) */
+.skip-link{ position:absolute; left:-999px; top:auto; width:1px; height:1px; overflow:hidden; }
+.skip-link:focus, .skip-link:active{ position:static; left:auto; width:auto; height:auto; padding:.5rem 1rem; background:#fff; color:var(--primary); z-index:9999; border-radius:4px; text-decoration:none; }
+
+/* 5) Media queries / Responsividade */
+@media (max-width:991px){
+    :root{ --card-image-height:220px; --card-title-box-height:48px; --base-font-size:16px; }
+    .banner{ min-height:420px; padding:1.4rem 1rem; }
+    .container{ padding-left:1rem; padding-right:1rem; }
+    .card img{ height:var(--card-image-height); }
+    .servico-card .card-body, .produto-card .card-body{ padding:1.4rem; padding-bottom:2.6rem; }
+    .navbar-brand .brand-name{ font-size:1rem; }
+}
+
+@media (max-width:767px){
+    .card img{ height:200px; }
+    .bg-hero{ padding:1rem; }
+    :root{ --base-font-size:15px; }
+    .card.h-100 .card-body .card-title{ flex-basis:48px; }
+    #depoimentos .col-md-4{ width:100%; }
+}
+
+@media (max-width:575px){
+    .carousel-indicators{ bottom:-10px; }
+    #sobre{ background-position:center top; background-size:cover; padding-top:2.5rem; padding-bottom:2.5rem; }
+}
+
+@media (max-width:479px){ :root{ --card-title-box-height:44px; } }
+

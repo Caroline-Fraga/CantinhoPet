@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="CantinhoPet — Pet shop com serviços, produtos e atendimento de qualidade. Projeto demonstrativo para portfólio.">
+        <title>CantinhoPet - Pet Shop</title>
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <!-- Projeto: CantinhoPet — versão para portfólio/estudo. Mantido sem backend; scripts são front-end apenas. -->
+        <a class="skip-link visually-hidden-focusable" href="#main">Pular para o conteúdo</a>
+        <header class="bg-white shadow-sm" role="banner">
+            <nav class="container navbar navbar-expand-lg navbar-light" role="navigation" aria-label="Menu principal">
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <div class="d-flex align-items-center">
+                        <i class="fa-solid fa-paw me-2 paw-icon" aria-hidden="true"></i>
+                        <div class="d-flex flex-column">
+                            <strong class="brand-name">CantinhoPet</strong>
+                            <small class="text-muted brand-sub">Seu pet merece o melhor</small>
+                        </div>
+                    </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#produtos">Produtos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#depoimentos">Depoimentos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main id="main" role="main">
+            <section class="banner text-white text-center d-flex align-items-center">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8 p-4 rounded">
+                            <h1 class="display-4">Boas vindas ao CantinhoPet</h1>
+                            <p class="lead">Banho, tosa, vacinas e os melhores produtos para o seu pet.</p>
+                            <a href="#servicos" class="btn btn-primary btn-lg mr-2">Nossos serviços</a>
+                            <a href="#produtos" class="btn btn-outline-light btn-lg">Ver produtos</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="sobre" class="py-5" role="region" aria-labelledby="sobre-title">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-8 mx-auto">
+                            <h2 id="sobre-title">Sobre o CantinhoPet</h2>
+                            <p>O CantinhoPet cuida do seu pet com atenção profissional e carinho. Trabalhamos com produtos selecionados, serviços completos e parcerias veterinárias para garantir saúde e bem-estar.</p>
+                            <ul>
+                                <li>Equipe treinada em comportamento animal e primeiros socorros</li>
+                                <li>Produtos premium e consultoria nutricional</li>
+                                <li>Protocolos de higiene e segurança em todos os serviços</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="servicos" class="py-5 bg-light" role="region" aria-labelledby="servicos-title">
+                <div class="container">
+                    <h2 id="servicos-title" class="text-center mb-4">Serviços</h2>
+
+                    <div id="carouselServicos" class="carousel slide" data-bs-ride="carousel" aria-label="Carrossel de serviços">
+                        <div class="d-flex align-items-center position-relative">
+                            <div class="d-none d-md-block me-3">
+                                <button class="carousel-control-prev overlay-control" type="button" data-bs-target="#carouselServicos" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Anterior</span>
+                                </button>
+                            </div>
+                            <div class="flex-fill position-relative">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="row">
+                                            <div class="col-md-4 mb-3">
+                                                <div class="card h-100 shadow-sm servico-card">
+                                                    <img loading="lazy" src="img/banho-tosa.jpg" class="card-img-top" alt="Banho e Tosa">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Banho e Tosa</h5>
+                                                        <div class="preco fw-bold mb-2">R$ 120,00</div>
+                                                        <p class="card-text">Banho com produtos dermatologicamente testados, tosa higiênica, secagem e escovação profissional.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 mb-3">
+                                                <div class="card h-100 shadow-sm servico-card">
+                                                    <img loading="lazy" src="img/corte-unhas.jpg" class="card-img-top" alt="Corte de unhas">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Corte de unhas</h5>
+                                                        <div class="preco fw-bold mb-2">R$ 30,00</div>
+                                                        <p class="card-text">Corte seguro com técnicas para evitar desconforto e sangramentos.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 mb-3">
+                                                <div class="card h-100 shadow-sm servico-card">
+                                                    <img loading="lazy" src="img/limpeza-ouvidos.jpg" class="card-img-top" alt="Limpeza de ouvidos">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Limpeza de ouvidos</h5>
+                                                        <div class="preco fw-bold mb-2">R$ 40,00</div>
+                                                        <p class="card-text">Limpeza cuidadosa e avaliação de infecções ou acúmulo de cerume.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <div class="row">
+                                            <div class="col-md-4 mb-3">
+                                                <div class="card h-100 shadow-sm servico-card">
+                                                                            <img loading="lazy" src="img/consultas-veterinarias.jpg" class="card-img-top" alt="Consultas veterinárias">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Consultas veterinárias</h5>
+                                                        <div class="preco fw-bold mb-2">R$ 120,00</div>
+                                                        <p class="card-text">Avaliação clínica, diagnóstico inicial e orientações preventivas.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 mb-3">
+                                                <div class="card h-100 shadow-sm servico-card">
+                                                    <img loading="lazy" src="img/aplicacao-vacinas.jpg" class="card-img-top" alt="Aplicação de vacinas">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Aplicação de vacinas</h5>
+                                                        <div class="preco fw-bold mb-2">R$ 60,00</div>
+                                                        <p class="card-text">Administração segura conforme protocolo e registro do calendário vacinal.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 mb-3">
+                                                <div class="card h-100 shadow-sm servico-card">
+                                                    <img loading="lazy" src="img/exames-simples.jpg" class="card-img-top" alt="Exames simples">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Exames simples</h5>
+                                                        <div class="preco fw-bold mb-2">R$ 80,00</div>
+                                                        <p class="card-text">Hemograma, bioquímica, urina, coproparasitológico, citologia e testes rápidos.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                        <div class="carousel-footer d-flex justify-content-center align-items-center mt-3">
+                            <div class="carousel-indicators d-flex justify-content-center">
+                                <button type="button" data-bs-target="#carouselServicos" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselServicos" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-none d-md-block ms-3">
+                        <button class="carousel-control-next overlay-control" type="button" data-bs-target="#carouselServicos" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Próximo</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+            </section>
+
+            <section id="produtos" class="py-5" role="region" aria-labelledby="produtos-title">
+                <div class="container">
+                    <h2 id="produtos-title" class="text-center mb-4">Produtos</h2>
+
+                    <div id="carouselProdutos" class="carousel slide" data-bs-ride="carousel" aria-label="Carrossel de produtos">
+                        <div class="d-flex align-items-center position-relative">
+                            <div class="d-none d-md-block me-3">
+                                <button class="carousel-control-prev overlay-control" type="button" data-bs-target="#carouselProdutos" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Anterior</span>
+                                </button>
+                            </div>
+                            <div class="flex-fill position-relative">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="row">
+                                            <div class="col-md-4 mb-3">
+                                                <div class="card h-100 shadow-sm produto-card">
+                                                    <img loading="lazy" src="img/racao-seca.jpg" class="card-img-top" alt="Ração Seca">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Ração seca</h5>
+                                                        <div class="preco fw-bold mb-2">R$ 89,90</div>
+                                                        <p class="card-text">Fórmulas balanceadas para filhotes, adultos e idosos.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 mb-3">
+                                                <div class="card h-100 shadow-sm produto-card">
+                                                    <img loading="lazy" src="img/racao-umida-pets.jpg" class="card-img-top" alt="Ração Úmida">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Ração úmida</h5>
+                                                        <div class="preco fw-bold mb-2">R$ 6,90</div>
+                                                        <p class="card-text">Sachês e latas para palatabilidade e hidratação adicional.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 mb-3">
+                                                <div class="card h-100 shadow-sm produto-card">
+                                                    <img loading="lazy" src="img/racoes-medicinais.jpg" class="card-img-top" alt="Rações Medicinais">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Rações medicinais</h5>
+                                                        <div class="preco fw-bold mb-2">R$ 149,90</div>
+                                                        <p class="card-text">Dietas terapêuticas para condições específicas.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <div class="row">
+                                            <div class="col-md-4 mb-3">
+                                                <div class="card h-100 shadow-sm produto-card">
+                                                    <img loading="lazy" src="img/petiscos.jpg" class="card-img-top" alt="Petiscos">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Petiscos</h5>
+                                                        <div class="preco fw-bold mb-2">R$ 24,90</div>
+                                                        <p class="card-text">Biscoitos e petiscos para recompensa e treino.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 mb-3">
+                                                <div class="card h-100 shadow-sm produto-card">
+                                                    <img loading="lazy" src="img/shampoo.jpg" class="card-img-top" alt="Shampoo">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Shampoo</h5>
+                                                        <div class="preco fw-bold mb-2">R$ 39,90</div>
+                                                        <p class="card-text">Shampoos suaves e dermatológicos.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 mb-3">
+                                                <div class="card h-100 shadow-sm produto-card">
+                                                    <img loading="lazy" src="img/condicionador.jpg" class="card-img-top" alt="Condicionador">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Condicionador</h5>
+                                                        <div class="preco fw-bold mb-2">R$ 34,90</div>
+                                                        <p class="card-text">Hidratação e desembaraço para pelagens sensíveis.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <div class="row">
+                                            <div class="col-md-4 mb-3">
+                                                <div class="card h-100 shadow-sm produto-card">
+                                                    <img loading="lazy" src="img/areia-gatos.jpg" class="card-img-top" alt="Areia para Gatos">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Areia para gatos</h5>
+                                                        <div class="preco fw-bold mb-2">R$ 29,90</div>
+                                                        <p class="card-text">Opções absorventes e controle de odores.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 mb-3">
+                                                <div class="card h-100 shadow-sm produto-card">
+                                                    <img loading="lazy" src="img/escovas-saude-oral.jpg" class="card-img-top" alt="Escovas & Saúde Oral">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Escovas & Saúde oral</h5>
+                                                        <div class="preco fw-bold mb-2">R$ 19,90</div>
+                                                        <p class="card-text">Escovas, pastas e produtos para higiene bucal.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 mb-3">
+                                                <div class="card h-100 shadow-sm produto-card">
+                                                    <img loading="lazy" src="img/coleira.jpg" class="card-img-top" alt="Coleira">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Coleira</h5>
+                                                        <div class="preco fw-bold mb-2">R$ 49,90</div>
+                                                        <p class="card-text">Modelos ajustáveis e resistentes.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <div class="row">
+                                            <div class="col-md-4 mb-3">
+                                                <div class="card h-100 shadow-sm produto-card">
+                                                    <img loading="lazy" src="img/guia.jpg" class="card-img-top" alt="Guia">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Guia</h5>
+                                                        <div class="preco fw-bold mb-2">R$ 44,90</div>
+                                                        <p class="card-text">Guias para passeios e treino.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 mb-3">
+                                                <div class="card h-100 shadow-sm produto-card">
+                                                    <img loading="lazy" src="img/peitoral.jpg" class="card-img-top" alt="Peitoral">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Peitoral</h5>
+                                                        <div class="preco fw-bold mb-2">R$ 79,90</div>
+                                                        <p class="card-text">Peitorais ergonômicos para segurança.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 mb-3">
+                                                <div class="card h-100 shadow-sm produto-card">
+                                                    <img loading="lazy" src="img/caminha.jpg" class="card-img-top" alt="Caminha">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Caminha</h5>
+                                                        <div class="preco fw-bold mb-2">R$ 199,90</div>
+                                                        <p class="card-text">Camas confortáveis e duráveis.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <div class="row">
+                                            <div class="col-md-4 mb-3">
+                                                <div class="card h-100 shadow-sm produto-card">
+                                                    <img loading="lazy" src="img/caixa-transporte.jpg" class="card-img-top" alt="Caixa de Transporte">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Caixa de transporte</h5>
+                                                        <div class="preco fw-bold mb-2">R$ 249,90</div>
+                                                        <p class="card-text">Opções seguras para viagens e consultas.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 mb-3">
+                                                <div class="card h-100 shadow-sm produto-card">
+                                                    <img loading="lazy" src="img/comedouro-bebedouro.jpg" class="card-img-top" alt="Comedouro / Bebedouro">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Comedouro / Bebedouro</h5>
+                                                        <div class="preco fw-bold mb-2">R$ 59,90</div>
+                                                        <p class="card-text">Modelos práticos e higiênicos.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 mb-3">
+                                                <div class="card h-100 shadow-sm produto-card">
+                                                    <img loading="lazy" src="img/bolinha.jpg" class="card-img-top" alt="Bolinha">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Bolinha</h5>
+                                                        <div class="preco fw-bold mb-2">R$ 9,90</div>
+                                                        <p class="card-text">Clássico para brincar e estimular caça.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <div class="row">
+                                            <div class="col-md-4 mb-3">
+                                                <div class="card h-100 shadow-sm produto-card">
+                                                    <img loading="lazy" src="img/brinquedo-pelucia.jpg" class="card-img-top" alt="Pelúcia">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Pelúcia</h5>
+                                                        <div class="preco fw-bold mb-2">R$ 29,90</div>
+                                                        <p class="card-text">Bonecos macios e seguros.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 mb-3">
+                                                <div class="card h-100 shadow-sm produto-card">
+                                                    <img loading="lazy" src="img/brinquedo-corda.jpg" class="card-img-top" alt="Brinquedo de Corda">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Brinquedo de corda</h5>
+                                                        <div class="preco fw-bold mb-2">R$ 19,90</div>
+                                                        <p class="card-text">Estimula mastigação e brincadeira interativa.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 mb-3">
+                                                <div class="card h-100 shadow-sm produto-card">
+                                                    <img loading="lazy" src="img/enriquecimento-ambiental.jpg" class="card-img-top" alt="Enriquecimento Ambiental">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Enriquecimento ambiental</h5>
+                                                        <div class="preco fw-bold mb-2">R$ 69,90</div>
+                                                        <p class="card-text">Itens que estimulam atividade mental e comportamento natural.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <div class="row">
+                                            <div class="col-md-4 mb-3">
+                                                <div class="card h-100 shadow-sm produto-card">
+                                                    <img loading="lazy" src="img/antipulgas-pets.jpg" class="card-img-top" alt="Antipulgas / Carrapaticida">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Antipulgas / Carrapaticida</h5>
+                                                        <div class="preco fw-bold mb-2">R$ 59,90</div>
+                                                        <p class="card-text">Produtos preventivos para controle de ectoparasitas.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 mb-3">
+                                                <div class="card h-100 shadow-sm produto-card">
+                                                    <img loading="lazy" src="img/comprimidos-vermifugo.jpg" class="card-img-top" alt="Vermífugos">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Vermífugos</h5>
+                                                        <div class="preco fw-bold mb-2">R$ 39,90</div>
+                                                        <p class="card-text">Protocolos e produtos para desparasitação.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 mb-3">
+                                                <div class="card h-100 shadow-sm produto-card">
+                                                    <img loading="lazy" src="img/vitaminas-suplementos-pets.jpg" class="card-img-top" alt="Vitaminas / Suplementos">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Vitaminas / Suplementos</h5>
+                                                        <div class="preco fw-bold mb-2">R$ 89,90</div>
+                                                        <p class="card-text">Suplementos nutricionais sob orientação veterinária.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="d-none d-md-block ms-3">
+                                <button class="carousel-control-next overlay-control" type="button" data-bs-target="#carouselProdutos" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Próximo</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="carousel-footer d-flex justify-content-center align-items-center mt-3">
+                            <div class="carousel-indicators d-flex justify-content-center flex-wrap">
+                                <button type="button" data-bs-target="#carouselProdutos" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselProdutos" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselProdutos" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselProdutos" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                <button type="button" data-bs-target="#carouselProdutos" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                <button type="button" data-bs-target="#carouselProdutos" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                                <button type="button" data-bs-target="#carouselProdutos" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="depoimentos" class="py-5 bg-light" role="region" aria-labelledby="depoimentos-title">
+                <div class="container">
+                    <h2 id="depoimentos-title" class="text-center mb-4">Depoimentos</h2>
+
+                    <div id="carouselDepoimentos" class="carousel slide" data-bs-ride="carousel" aria-label="Carrossel de depoimentos">
+                        <div class="d-flex align-items-center position-relative">
+                            <div class="d-none d-md-block me-3">
+                                <button class="carousel-control-prev overlay-control" type="button" data-bs-target="#carouselDepoimentos" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Anterior</span>
+                                </button>
+                            </div>
+                            <div class="flex-fill position-relative">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="row">
+                                            <div class="col-md-4 mb-3">
+                                                <div class="card p-3 shadow-sm h-100">
+                                                    <p>"Excelente atendimento, meu pet voltou mais feliz depois do banho."</p>
+                                                    <div class="font-weight-bold">— Maria</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 mb-3">
+                                                <div class="card p-3 shadow-sm h-100">
+                                                    <p>"Produtos de qualidade e atendimento excelente — recomendo."</p>
+                                                    <div class="font-weight-bold">— João</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 mb-3">
+                                                <div class="card p-3 shadow-sm h-100">
+                                                    <p>"Equipe atenciosa e preços justos."</p>
+                                                    <div class="font-weight-bold">— Ana</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <div class="row">
+                                            <div class="col-md-4 mb-3">
+                                                <div class="card p-3 shadow-sm h-100">
+                                                    <p>"A equipe tratou meu pet com muito carinho — a tosa ficou ótima e ele voltou bem tranquilo."</p>
+                                                    <div class="font-weight-bold">— Lucas</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 mb-3">
+                                                <div class="card p-3 shadow-sm h-100">
+                                                    <p>"Comprei ração e o time foi muito prestativo; recomendo."</p>
+                                                    <div class="font-weight-bold">— Beatriz</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 mb-3">
+                                                <div class="card p-3 shadow-sm h-100">
+                                                    <p>"Recomendo pelos profissionais e pelo carinho com os animais."</p>
+                                                    <div class="font-weight-bold">— Rafael</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-none d-md-block ms-3">
+                                <button class="carousel-control-next overlay-control" type="button" data-bs-target="#carouselDepoimentos" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Próximo</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="carousel-footer d-flex justify-content-center align-items-center mt-3">
+                            <div class="carousel-indicators d-flex justify-content-center">
+                                <button type="button" data-bs-target="#carouselDepoimentos" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselDepoimentos" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+            <section id="contato">
+                <div class="container">
+                    <h2 class="text-center mb-4">Contato</h2>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="card formulario-contato shadow-sm">
+                                <div class="card-body">
+                                    <h5 id="contato-form-title" class="card-title">Envie uma mensagem</h5>
+                                    <p class="card-text text-muted">Preencha o formulário abaixo e entraremos em contato o mais breve possível.</p>
+
+                                    <form id="contactForm" novalidate aria-labelledby="contato-form-title">
+                                        <div class="mb-3">
+                                            <label for="nome" class="form-label">Nome <span class="text-danger">*</span></label>
+                                            <input type="text" class="form-control" id="nome" name="nome" placeholder="Seu nome" required aria-required="true" autocomplete="name">
+                                            <div class="invalid-feedback">Por favor informe seu nome.</div>
+                                        </div>
+
+                                        <div class="row g-3">
+                                            <div class="col-md-6">
+                                                <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
+                                                <input type="email" class="form-control" id="email" name="email" placeholder="seu@email.com" required aria-required="true" autocomplete="email">
+                                                <div class="invalid-feedback">Por favor informe um email válido.</div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="telefone" class="form-label">Telefone</label>
+                                                <input type="tel" class="form-control" id="telefone" name="telefone" placeholder="(11) 98765-4321" inputmode="tel" autocomplete="tel">
+                                            </div>
+                                        </div>
+
+
+                                        <div class="mb-3">
+                                            <label for="mensagem" class="form-label">Mensagem <span class="text-danger">*</span></label>
+                                            <textarea class="form-control" id="mensagem" name="mensagem" rows="5" placeholder="Como podemos ajudar?" required aria-required="true" autocomplete="off"></textarea>
+                                            <div class="invalid-feedback">Por favor escreva uma mensagem.</div>
+                                        </div>
+
+
+                                        <div class="d-flex justify-content-end">
+                                            <button type="submit" class="btn btn-primary d-flex align-items-center">
+                                                <span>Enviar mensagem</span>
+                                                <span class="spinner-border spinner-border-sm ms-2 d-none" role="status" aria-hidden="true"></span>
+                                            </button>
+                                        </div>
+                                    </form>
+
+                                    <div id="contactSuccess" class="alert alert-success mt-3 d-none" role="alert">Mensagem enviada com sucesso. Responderemos em breve.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        <footer class="py-4 bg-dark text-white" role="contentinfo" aria-label="Rodapé">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-12">
+                        <p class="mb-1">Endereço: Av. das Flores, 123 — Centro, São Paulo - SP</p>
+                        <p class="mb-1">Telefone: <a href="tel:+5511987654321" class="text-white">(11) 98765-4321</a></p>
+                        <p class="mb-0">Horário: Seg–Sex 09:00 — 18:00 Sáb 09:00 — 13:00 </p>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-12 text-center">
+                        <p class="mb-0">© 2025 CantinhoPet</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
