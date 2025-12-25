@@ -6,17 +6,13 @@ Projeto estático demonstrativo para portfólio e uso acadêmico
 Projeto front-end estático que simula o site de um pet shop ("CantinhoPet"). Inclui seções de apresentação, serviços, produtos, depoimentos e um formulário de contato. O objetivo é demonstrar habilidades em HTML semântico, CSS responsivo (Bootstrap + estilos customizados) e JavaScript para melhorias de usabilidade e acessibilidade.
 
 ## ▶️ Demonstração / Visualização
-- 🔗 Deploy: (nenhum deploy público incluído por padrão).
-- 🖥️ Para visualizar localmente, abra `index.html` no navegador ou rode um servidor estático (recomendado para funcionamento completo do JavaScript e auditorias).
+- 🔗 Deploy: https://caroline-fraga.github.io/CantinhoPet/
+- 🖥️ Para visualizar localmente, abra `index.html` no navegador.
 
 Exemplo (PowerShell):
 ```powershell
 # Abrir arquivo diretamente (modo desenvolvimento simples)
 start .\index.html
-
-# Ou iniciar servidor estático com Python 3 (recomendado)
-python -m http.server 8000
-# Em seguida acessar: http://localhost:8000
 ```
 
 ## ✨ Funcionalidades
