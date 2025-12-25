@@ -15,6 +15,12 @@ Exemplo (PowerShell):
 start .\index.html
 ```
 
+
+
+https://github.com/user-attachments/assets/aebb15c7-b30a-4b7c-ad09-71d63f96cb7e
+
+
+
 ## ✨ Funcionalidades
 - ✅ Layout responsivo com Bootstrap e CSS personalizado.
 - 📚 Seções: banner, sobre, serviços (carrossel), produtos (carrossel), depoimentos (carrossel), contato (formulário) e rodapé.
