@@ -1,6 +1,6 @@
 # 🐾 CantinhoPet
 
-🚀 Projeto estático demonstrativo para portfólio e uso acadêmico
+Projeto estático demonstrativo para portfólio e uso acadêmico
 
 ## 💡 Descrição
 Projeto front-end estático que simula o site de um pet shop ("CantinhoPet"). Inclui seções de apresentação, serviços, produtos, depoimentos e um formulário de contato. O objetivo é demonstrar habilidades em HTML semântico, CSS responsivo (Bootstrap + estilos customizados) e JavaScript para melhorias de usabilidade e acessibilidade.
