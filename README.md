@@ -63,8 +63,6 @@ Principais arquivos:
 - **JavaScript**: funções de responsabilidade única, IIFE, `const/let`, debounce e comentários em PT.
 - **Acessibilidade**: skip link, labels, `aria-live` e atributos de apoio.
 
-Essas práticas facilitam manutenção, leitura do código e avaliação técnica.
-
 ## 📱 Responsividade e ♿ Acessibilidade
 - **Dispositivos:** o layout usa Bootstrap para adaptação de colunas; `--card-image-height` é ajustado via media queries para telas menores.
 - **Acessibilidade:** foco visível no skip-link, labels vinculados a inputs, feedback de validação e atributos `aria`.
