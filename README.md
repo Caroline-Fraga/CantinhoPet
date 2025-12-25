@@ -72,7 +72,7 @@ Principais arquivos:
 
 ## ▶️ Como executar o projeto localmente (passo a passo)
 1. Clone ou copie a pasta do projeto para seu computador.
-2. Navegue até a pasta do projeto no terminal (PowerShell no Windows):
+2. Navegue até a pasta do projeto no terminal:
 ```powershell
 cd cantinho_pet
 ```
