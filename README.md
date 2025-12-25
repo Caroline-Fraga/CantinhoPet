@@ -74,14 +74,9 @@ Principais arquivos:
 1. Clone ou copie a pasta do projeto para seu computador.
 2. Navegue até a pasta do projeto no terminal (PowerShell no Windows):
 ```powershell
-cd 'C:\Users\carol\Downloads\cantinho_pet'
+cd cantinho_pet
 ```
 3. Método rápido: abrir `index.html` no navegador (visualização simples): `start .\index.html`.
-4. Método recomendado (servidor local):
-```powershell
-# Com Python 3 instalado
-python -m http.server 8000
-# Abra http://localhost:8000
 ```
 
 ## 🧪 Aprendizados e desafios
