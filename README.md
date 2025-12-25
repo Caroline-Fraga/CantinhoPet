@@ -77,9 +77,8 @@ Principais arquivos:
 cd cantinho_pet
 ```
 3. Método rápido: abrir `index.html` no navegador (visualização simples): `start .\index.html`.
-```
 
-## 🧪 Aprendizados e desafios
+## 🧪 Aprendizados e desafios 
 - **Aprendizados:**
 	- Organização de CSS escalável com variáveis e seções comentadas.
 	- Estratégias para equalizar visualmente cards em carrosséis mesmo com slides ocultos.
