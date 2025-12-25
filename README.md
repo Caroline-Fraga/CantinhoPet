@@ -23,7 +23,7 @@ start .\index.html
 - 🔧 Equalização de altura dos cards via JavaScript para manter alinhamento visual entre slides.
 - ♿ Melhores práticas de acessibilidade: skip link, `role` / `aria-labelledby` em seções, labels vinculados a inputs, `alt` em imagens e `aria-live` para notificações.
 
-Diferenciais implementados manualmente:
+Diferenciais implementados:
 - 🧩 JS com responsabilidade única por função e comentários claros.
 - 🎨 CSS organizado com variáveis (`:root`) e seções comentadas para facilitar manutenção.
 
