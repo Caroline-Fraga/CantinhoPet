@@ -48,8 +48,8 @@ Papel de cada tecnologia:
 
 ## 📁 Estrutura de pastas e arquivos
 ```
-index.html
-README.md
+index.html          # Arquivo principal com marcação semântica
+README.md           # Este arquivo
 bootstrap/          # arquivos do Bootstrap (CSS/JS locais)
 css/
 	style.css          # estilos principais e organizados
